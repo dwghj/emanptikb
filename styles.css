@@ -1,0 +1,430 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: #004080;
+    color: white;
+  }
+  
+  header .logo img {
+    max-width: 80px;
+    margin-bottom: 10px;
+  }
+  
+ /* Navigation */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #0074D9;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  nav ul li a.active, nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Banner */
+.banner {
+    text-align: center;
+    background-color: #004080;
+    color: white;
+    padding: 20px;
+  }
+  
+  .banner img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .banner p {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+ /* Footer */
+footer {
+    text-align: center;
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  footer .address, footer .social-media {
+    margin: 10px 0;
+  }
+  
+  footer .social-media a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  footer .social-media a:hover {
+    color: #FFD700;
+  }
+  
+  /*efek hover jurusan
+  /* Gaya Navigasi */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #004080; /* Warna latar navigasi */
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: inline-block;
+    position: relative;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #ffcc00; /* Warna garis bawah */
+    transition: width 0.3s ease, left 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ffcc00; /* Warna teks saat hover */
+    background-color: #002850; /* Warna latar belakang saat hover */
+  }
+  
+  nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+  }
+
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  }
+  
+/* Latar belakang untuk visi & misi */
+/* Visi & Misi */
+.visi-misi-container {
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .misi {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #E6F2FF;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .misi h3 {
+    text-align: center;
+    color: #004080;
+  }
+  
+  .misi ul {
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 20px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .visi-misi-container {
+      padding: 15px;
+    }
+  
+    .visi-misi-container ul li {
+      font-size: 14px;
+    }
+  }
+  
+  /*Page Jurusan*/
+  .jurusan {
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px;
+  }
+  
+  .jurusan h2 {
+    font-size: 28px;
+    color: #004080;
+    margin-bottom: 20px;
+  }
+  
+  .jurusan-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .jurusan-item {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .jurusan-item h3 {
+    font-size: 20px;
+    color: #004080;
+    margin-bottom: 10px;
+  }
+  
+  .jurusan-item p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .jurusan-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Section Ekskul */
+.ekskul {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .ekskul h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .ekskul p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #666;
+  }
+  
+  .ekskul-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .ekskul-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .ekskul-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .ekskul-item i {
+    font-size: 40px;
+    color: #004080;
+    margin-bottom: 15px;
+  }
+  
+  .ekskul-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .ekskul-item p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* PPDB Styles */
+.ppdb-banner {
+    text-align: center;
+    background-color: #004080;
+    color: white;
+    padding: 30px 20px;
+  }
+  
+  .ppdb-banner h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .ppdb-banner p {
+    font-size: 18px;
+  }
+  
+  .form-container {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  form h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #004080;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  .btn-submit {
+    display: block;
+    width: 100%;
+    background-color: #004080;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .btn-submit:hover {
+    background-color: #003366;
+  }
+  
+  /* Tentang Page */
+.tentang-banner {
+    text-align: center;
+    background-color: #004080;
+    color: white;
+    padding: 30px 20px;
+  }
+  
+  .tentang-banner h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .tentang-banner p {
+    font-size: 18px;
+  }
+  
+  .tentang-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-section {
+    margin-bottom: 20px;
+  }
+  
+  .about-section h3 {
+    color: #004080;
+    margin-bottom: 10px;
+  }
+  
+  .about-section p,
+  .about-section ul {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .about-section ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
+  /* Tambahkan aturan untuk paragraf dalam section about-section */
+.about-section p {
+    text-align: left;
+    line-height: 1.8; /* Memberikan spasi antar baris agar lebih nyaman dibaca */
+    margin-bottom: 20px; /* Menambahkan jarak antar paragraf */
+  }
+  
+  .map-container {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+
+  
+  
+
+
+    

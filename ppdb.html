@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PPDB SMK Islam Al-Amanah</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/logoo.png" alt="Logo SMK Islam Al-Amanah">
+    </div>
+    <h1>PPDB SMK ISLAM AL-AMANAH SALEM</h1>
+    <p>Bergerak Berubah Berkarya.</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="jurusan.html">Jurusan</a></li>
+      <li><a href="ekstrakurikuler.html">Ekskul</a></li>
+      <li><a href="ppdb.html" class="active">PPDB</a></li>
+      <li><a href="tentang.html">Tentang</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="ppdb-banner">
+      <h2>Pendaftaran Peserta Didik Baru</h2>
+      <p>Daftar sekarang untuk bergabung bersama kami di SMK Islam Al-Amanah!</p>
+    </div>
+    <div class="form-container">
+      <form action="submit_ppdb.php" method="POST">
+        <h3>Formulir Pendaftaran</h3>
+        <div class="form-group">
+          <label for="name">Nama Lengkap:</label>
+          <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap" required>
+        </div>
+        <div class="form-group">
+          <label for="birthplace">Tempat Lahir:</label>
+          <input type="text" id="birthplace" name="birthplace" placeholder="Masukkan tempat lahir" required>
+        </div>
+        <div class="form-group">
+          <label for="birthdate">Tanggal Lahir:</label>
+          <input type="date" id="birthdate" name="birthdate" required>
+        </div>
+        <div class="form-group">
+          <label for="address">Alamat:</label>
+          <textarea id="address" name="address" rows="3" placeholder="Masukkan alamat lengkap" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="phone">Nomor Telepon:</label>
+          <input type="tel" id="phone" name="phone" placeholder="Masukkan nomor telepon" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Masukkan email aktif" required>
+        </div>
+        <div class="form-group">
+          <label for="program">Pilih Jurusan:</label>
+          <select id="program" name="program" required>
+            <option value="">-- Pilih Jurusan --</option>
+            <option value="tkj">Teknik Komputer dan Jaringan (TKJ)</option>
+            <option value="akuntansi">Akuntansi</option>
+            <option value="multimedia">Multimedia</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-submit">Kirim Pendaftaran</button>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <h2>SMK ISLAM AL-AMANAH</h2>
+    <p>Bergerak, berubah, berkarya</p>
+    <div class="address">
+      <p>Alamat: Jl. Raya Salem No.123, Desa Salem, Kabupaten Brebes, Jawa Tengah, Indonesia</p>
+      <p>Email: info@smkislamalamanah.sch.id | Telepon: (0283) 123456</p>
+    </div>
+    <div class="social-media">
+      <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
